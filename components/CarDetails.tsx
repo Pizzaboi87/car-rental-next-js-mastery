@@ -1,15 +1,15 @@
-"use client";
+'use client';
 
-import Image from "next/image";
-import { Fragment } from "react";
-import { Dialog, Transition } from "@headlessui/react";
-import { CarDetailsProps } from "@/types";
+import Image from 'next/image';
+import { Fragment } from 'react';
+import { Dialog, Transition } from '@headlessui/react';
+import { CarDetailsProps } from '@/types';
 
 const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
   return (
     <>
       <Transition appear show={isOpen} as={Fragment}>
-        <Dialog as={div} className="relative z-10" onClose={closeModal}>
+        <Dialog as="div" className="relative z-10" onClose={closeModal}>
           <Transition.Child
             as={Fragment}
             enter="ease-out duration-300"
@@ -97,7 +97,7 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                           key={key}
                         >
                           <h4 className="text-gray capitalize">
-                            {key.split("_").join(" ")}
+                            {key.split('_').join(' ')}
                           </h4>
                           <p className="text-black-100 font-semibold">
                             {value}
