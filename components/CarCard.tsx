@@ -1,11 +1,11 @@
-"use client";
+'use client';
 
-import CarDetails from "./CarDetails";
-import CustomButton from "./CustomButton";
-import Image from "next/image";
-import { useState } from "react";
-import { CarProps } from "@/types";
-import { calculateCarRent } from "@/utils";
+import CarDetails from './CarDetails';
+import CustomButton from './CustomButton';
+import Image from 'next/image';
+import { useState } from 'react';
+import { CarProps } from '@/types';
+import { calculateCarRent, generateCarImageUrl } from '@/utils';
 
 interface CarCardProps {
   car: CarProps;
@@ -30,7 +30,7 @@ const CarCard = ({ car }: CarCardProps) => {
       </p>
       <div className="relative w-full h-40 my-3 object-contain">
         <Image
-          src="/hero.png"
+          src={generateCarImageUrl(car)}
           alt="Car Model"
           fill
           priority
@@ -47,7 +47,7 @@ const CarCard = ({ car }: CarCardProps) => {
               alt="Steering Wheel"
             />
             <p className="text-[14px]">
-              {transmission === "a" ? "Automatic" : "Manual"}
+              {transmission === 'a' ? 'Automatic' : 'Manual'}
             </p>
           </div>
           <div className="flex flex-col justify-center items-center gap-2">

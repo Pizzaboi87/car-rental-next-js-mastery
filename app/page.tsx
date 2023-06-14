@@ -1,6 +1,6 @@
-import { Hero, SearchBar, CustomFilter, CarCard } from "@/components";
-import { fetchCars } from "@/utils";
-import Image from "next/image";
+import { Hero, SearchBar, CustomFilter, CarCard } from '@/components';
+import { fetchCars } from '@/utils';
+import Image from 'next/image';
 
 export default async function Home() {
   const allCars = await fetchCars();
