@@ -43,3 +43,7 @@ export interface FilterCarsProps {
   limit: number;
   model: string;
 }
+
+export interface SearchParams {
+  searchParams: FilterCarsProps;
+}
