@@ -47,3 +47,13 @@ export interface FilterCarsProps {
 export interface SearchParams {
   searchParams: FilterCarsProps;
 }
+
+export interface CustomFilterProps {
+  title: string;
+  options: OptionProps[];
+}
+
+export interface OptionProps {
+  title: string;
+  value: string;
+}
