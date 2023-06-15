@@ -101,7 +101,11 @@ const CarDetails = ({ isOpen, closeModal, car }: CarDetailsProps) => {
                             {key.split('_').join(' ')}
                           </h4>
                           <p className="text-black-100 font-semibold">
-                            {value}
+                            {value === 'a'
+                              ? 'automatic'
+                              : value === 'm'
+                              ? 'manual'
+                              : value}
                           </p>
                         </div>
                       ))}

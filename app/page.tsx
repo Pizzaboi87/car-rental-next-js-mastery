@@ -17,7 +17,7 @@ export default async function Home({ searchParams }: SearchParams) {
   return (
     <main className="overflow-hidden">
       <Hero />
-      <div className="mt-12 padding-x padding-y max-width" id="discover">
+      <div className="mt-12 mb-12 padding-x padding-y max-width" id="discover">
         <div className="home__text-container">
           <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
           <p>Explore the cars you might like</p>
@@ -25,7 +25,7 @@ export default async function Home({ searchParams }: SearchParams) {
         <div className="home__filters">
           <SearchBar />
 
-          <div className="home__filter-container">
+          <div className="home__filter-container mb-10">
             <CustomFilter title="fuel" options={fuels} />
             <CustomFilter title="year" options={yearsOfProduction} />
           </div>
@@ -40,7 +40,7 @@ export default async function Home({ searchParams }: SearchParams) {
           </section>
         ) : (
           <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">
+            <h2 className="text-black text-xl font-bold mt-10 mb-14">
               There's no any result.
             </h2>
             <p>{allCars?.message}</p>

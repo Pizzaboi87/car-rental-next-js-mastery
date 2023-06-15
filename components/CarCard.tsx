@@ -47,7 +47,7 @@ const CarCard = ({ car }: CarCardProps) => {
               alt="Steering Wheel"
             />
             <p className="text-[14px]">
-              {transmission === 'a' ? 'Automatic' : 'Manual'}
+              {transmission === 'a' ? 'Automatic' : 'Manual'} 
             </p>
           </div>
           <div className="flex flex-col justify-center items-center gap-2">
