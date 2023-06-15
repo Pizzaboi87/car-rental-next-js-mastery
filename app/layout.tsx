@@ -2,7 +2,7 @@ import { Navbar, Footer } from '@/components';
 import './globals.css';
 
 export const metadata = {
-  title: 'Car Hub Rental',
+  title: 'CarHub Car-Rental',
   description: 'Car Rental Homepage - Next.js',
 };
 
