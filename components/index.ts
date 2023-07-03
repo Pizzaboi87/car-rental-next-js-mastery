@@ -1,4 +1,5 @@
 import Hero from './Hero';
+import MainContent from './MainContent';
 import CustomButton from './CustomButton';
 import Navbar from './Navbar';
 import Footer from './Footer';
@@ -12,6 +13,7 @@ import ShowMore from './ShowMore';
 
 export {
   Hero,
+  MainContent,
   CustomButton,
   Navbar,
   Footer,
