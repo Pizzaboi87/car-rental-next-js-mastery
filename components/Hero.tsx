@@ -33,7 +33,7 @@ const Hero = () => {
           whileInView={{ opacity: 1 }}
           className="hero__image"
         >
-          <Image src="/hero.png" alt="hero" fill className="object-contain" />
+          <Image src="/newHero.png" alt="hero" fill className="object-contain" />
         </motion.div>
         <div className="hero__image-overlay" />
       </div>
