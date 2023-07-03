@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import { CustomButtonProps } from '@/types';
+import { motion } from 'framer-motion';
 
 const CustomButton = ({
   title,
@@ -13,7 +14,8 @@ const CustomButton = ({
   isDisabled,
 }: CustomButtonProps) => {
   return (
-    <button
+    <motion.button
+      whileHover={{ scale: 1.2 }}
       disabled={false}
       type={btnType || 'button'}
       className={`custom-btn ${containerStyles}`}
@@ -30,7 +32,7 @@ const CustomButton = ({
           />
         </div>
       )}
-    </button>
+    </motion.button>
   );
 };
 

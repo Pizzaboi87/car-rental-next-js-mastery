@@ -2,6 +2,7 @@
 
 import CustomButton from './CustomButton';
 import Image from 'next/image';
+import { motion } from 'framer-motion';
 
 const Hero = () => {
   const handleScroll = () => {
@@ -29,9 +30,14 @@ const Hero = () => {
         />
       </div>
       <div className="hero__image-container">
-        <div className="hero__image">
+        <motion.div
+          whileHover={{ scale: 1.2 }}
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          className="hero__image"
+        >
           <Image src="/hero.png" alt="hero" fill className="object-contain" />
-        </div>
+        </motion.div>
         <div className="hero__image-overlay" />
       </div>
     </div>
