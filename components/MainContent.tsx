@@ -17,7 +17,7 @@ async function MainContent({ searchParams }: SearchParams) {
     <div className="mt-12 mb-12 padding-x padding-y max-width" id="discover">
       <div className="home__text-container">
         <h1 className="text-4xl font-extrabold">Car Catalogue</h1>
-        <p>Explore the cars you might like</p>
+        <p>Discover the car of your dreams</p>
       </div>
       <div className="home__filters">
         <SearchBar />

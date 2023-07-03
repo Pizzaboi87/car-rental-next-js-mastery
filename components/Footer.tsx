@@ -12,7 +12,7 @@ const Footer = () => {
             alt="logo"
             width={118}
             height={18}
-            className="object-contain"
+            className="object-contain hue-rotate-180	"
           />
           <p className="text-base text-gray-700 md:hidden">
             2023 CarHub&copy; <br /> All rights reserved.
