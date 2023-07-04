@@ -1,5 +1,5 @@
-import { Hero, MainContent } from '@/components';
-import { SearchParams } from '@/types';
+import { Hero, MainContent } from "@/components";
+import { SearchParams } from "@/types";
 
 const Home = ({ searchParams }: SearchParams) => {
   return (
